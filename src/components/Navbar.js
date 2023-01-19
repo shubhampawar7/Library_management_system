@@ -74,11 +74,16 @@ function Navbar() {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto f-right mb-0">
-                            <li className="nav-item m-auto f-right">
-                                <Link className="nav-link " aria-current="page" to="/Home">Home</Link>
-                            </li>
                             <li className="nav-item m-auto f-right ">
-                                <Link className="btn btn-outline-dark f-right bg-info" to="/Login" onClick={signinfunction} role="button">Login</Link>
+                                <Link className="nav-link active tex" aria-current="page" to="/login">Home</Link>
+                            </li>
+{/* 
+                            <li className="nav-item m-auto f-right ">
+                                <Link className="nav-link  " aria-current="page" to="/Home">Books</Link>
+                            </li> */}
+                            
+                            <li className="nav-item m-auto f-right ">
+                                <Link className="btn btn-outline-dark f-right bg-info" to="/" onClick={signinfunction} role="button">Login</Link>
                             </li>
 
                             {/* 
@@ -95,9 +100,9 @@ function Navbar() {
             </nav>
             {/* navbar end */}
 
-            <div className="image-main">
+            {/* <div className="image-main">
                 <img className="image-link" src="https://images.unsplash.com/photo-1577985051167-0d49eec21977?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80" alt="image"></img>
-            </div>
+            </div> */}
 
 
         </>
